@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #354B50;
+    background-color: #FFF8E8;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px 6%;
+    background-color: #B8DCE8;
+    color: #284B59;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.site-nav a {
+    color: #35a8d6;
+    text-decoration: none;
+}
+
+.site-nav a {
+    color: #3D7180;
+}
+
+.first {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 430px;
+    padding: 60px 8%;
+    color: white;
+    background-color: #52789e;
+}
+
+.first-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 0;
+    background-color: #284B59;
+    
+}
+
+.first-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #52789e;
+    color: white;
+}
+
+
+.first-text {
+    color: #F3D9A2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.first-content p {
+    margin-bottom: 18px;
+}
+
+.main-link {
+    display: inline-block;
+    background-color: #82d96c;
+    color: #f1f2f3;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+.main-link {
+    background-color: #d5c495;
+}
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 55px 25px 35px;
+    text-align: center;
+}
+
+h2 {
+    color: #3D7180;
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.intro p,
+.section-description {
+    max-width: 760px;
+    margin: 0 auto 15px;
+}
+
+.menu-section {
+    padding: 45px 6%;
+}
+
+.menu-highlight {
+    background-color: #E7F1F0;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.food-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.food-card {
+    background-color: #FFFFFF;
+    border: 1px solid #B8DCE8;
+    border-radius: 8px;
+    width: calc((100% - 48px) / 3);
+    min-width: 220px;
+    overflow: hidden;
+    transition: 0,6s;
+}
+
+.food-card:hover {
+    background-color: #d7e9ef;
+    transform: scale(1.02);
+}
+
+.food-card ul {
+    list-style: none;
+}
+
+.food-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.food-card {
+    border-color: #D9A66C;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    color: #3D7180;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.food-info p {
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #B8793E;
+    font-weight: bold;
+}
+
+.island-banner {
+    padding: 55px 8%;
+    background-color: #6D9277;
+    color: white;
+    text-align: center;
+}
+
+.island-banner h2 {
+    color: #FFF0C9;
+}
+
+.info-fin {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.table-center {
+    margin: auto;
+}
+
+.table {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #FFF8E8;
+}
+
+td {
+    border: 1px solid #B8DCE8;
+    padding: 12px;
+    text-align: center;
+}
+
+.site-footer {
+    padding: 25px;
+    background-color: #284B59;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+
+    .food-card {
+        width: calc((100% - 24px) / 2);
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hide {
+        display: none;
+    }
+
+    .first {
+        padding: 35px 5%;
+        min-height: 360px;
+    }
+
+    .first-content {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    .menu-section {
+        padding: 35px 6%;
+    }
+}
